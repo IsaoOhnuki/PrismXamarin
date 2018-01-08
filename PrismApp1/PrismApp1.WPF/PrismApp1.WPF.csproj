@@ -124,6 +124,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrismApp1\PrismApp1.csproj">
+      <Project>{9d5a4f71-4642-4810-89d4-0791fc9c06a6}</Project>
+      <Name>PrismApp1</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
