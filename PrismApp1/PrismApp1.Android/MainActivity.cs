@@ -1,7 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Microsoft.Practices.Unity;
+using Prism;
+using Prism.Ioc;
 using Prism.Unity;
 
 namespace PrismApp1.Droid
@@ -9,6 +10,11 @@ namespace PrismApp1.Droid
     [Activity(Label = "PrismApp1", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        public MainActivity()
+        {
+
+        }
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -23,7 +29,7 @@ namespace PrismApp1.Droid
 
     public class AndroidInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IUnityContainer container)
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Register any platform specific implementations
         }

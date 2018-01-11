@@ -12,8 +12,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Prism;
+using Unity;
+using Prism.Ioc;
 
 namespace PrismApp1.UWP
 {
@@ -29,7 +31,7 @@ namespace PrismApp1.UWP
 
     public class UwpInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IUnityContainer container)
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
 
         }
