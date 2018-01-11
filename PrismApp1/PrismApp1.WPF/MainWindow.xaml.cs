@@ -18,9 +18,9 @@ namespace PrismApp1.WPF
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Window
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
         }
